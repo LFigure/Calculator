@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.calculator{
+    justify-self: center;
+    background-color: aquamarine;
+    place-items: center;
+    height: 100vh;
+}
+
+#result{
+    max-width: 466px;
+    background-color: darkGrey;
+    height: 50px;
+    font-size: 48px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.operators{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: fit-content;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#addition, #subtraction, #division, #multiplication {
+    background: linear-gradient(to right, #848485, #272727, #848485);
+    color: white
+}
+
+#clearEntry{
+    background: linear-gradient(to right, #848485, #272727, #848485);
+    color: red;
+    max-width: 50px;
+}
+
+.numbersAndOperators{
+    max-width: fit-content;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+button{
+    width: 100px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: grey;
+}
+
+#equals{
+    background-color: orange;
+    max-width: 50px;
+    grid-column-start: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+#squareRoot, #power, #pi, #modulous{
+    background: linear-gradient(to right, #848485, #272727, #848485);
+    color: white;
+}
+
+
+#clear{
+    background-color: red;
+}
