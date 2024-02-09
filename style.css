@@ -3,23 +3,41 @@
     padding: 0;
 }
 
-.calculator{
-    justify-self: center;
-    background-color: aquamarine;
-    place-items: center;
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin: 0;
+    background-color: #e3f9ff;
 }
 
-#result{
-    max-width: 466px;
-    background-color: darkGrey;
-    height: 50px;
-    font-size: 48px;
+.calculator {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 5px 4px 6px rgba(10, 10, 10, 20);
+    justify-self: center;
+    background-color: #3a4452;
+    max-width: fit-content;
+}
+
+form .display{
     display: flex;
     justify-content: flex-end;
+    height: 50px;
+    margin: 5px 0;
+    background-color: darkGrey;
 }
 
-.operators{
+form .display input{
+    background-color: darkGrey;
+    text-align: right;
+    flex: 1;
+    font-size: 30px;
+    box-shadow: none;
+}
+
+.operators {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -28,8 +46,9 @@
     grid-template-columns: auto auto auto auto auto;
     max-width: fit-content;
     margin: 0;
-    padding: 0;
-    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
 #addition, #subtraction, #division, #multiplication {
@@ -37,22 +56,26 @@
     color: white
 }
 
-#clearEntry{
+#allClear{
     background: linear-gradient(to right, #848485, #272727, #848485);
     color: red;
     max-width: 50px;
 }
 
-.numbersAndOperators{
+.numbersAndOperators {
     max-width: fit-content;
     gap: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
 }
 
 button{
     width: 100px;
     font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, .2);
 }
 
 button:hover{

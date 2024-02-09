@@ -1,42 +1,4 @@
-//Basic operators
-function addition(){
-
+function sqrt() {
+    var val = document.getElementById("ro").value;
+    document.getElementById("ro").value = "Math.sqrt(" + val + ")";
 }
-
-function subtraction(){
-
-}
-
-function multiplication(){
-
-}
-
-function divide(){
-
-}
-
-
-
-//Special operators
-function squareRoot(){
-
-}
-
-function power(){
-
-}
-
-function pi(){
-
-}
-
-function modulous(){
-
-}
-
-
-//Equalization
-function equals(){
-    
-}
-
